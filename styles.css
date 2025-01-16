@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-background: hsl(30, 54%, 90%);
+
+  /* Spacing */
+  --padding-default: 25px;
+
+  /* Borders */
+  --border-radius-big: 20px;
+  --border-radius-small: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Young Serif", serif;
+}
+
+p {
+  font-family: "Outfit", serif;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  background-color: var(--color-white);
+  display: flex;
+  width: 800px;
+  height: 500px;
+  padding: var(--padding-default);
+  border-radius: var(--border-radius-big);
+}
+
+img {
+  border-radius: var(--border-radius-small);
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
